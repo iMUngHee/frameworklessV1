@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>2022 FE 데브매칭</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <template id="selected-item">
+      <li></li>
+    </template>
+    <template id="suggestion-item">
+      <li></li>
+    </template>
+    <template id="highlight">
+      <span class="Suggestion__item--matched"></span>
+    </template>
+    <template id="app">
+      <main class="search-app">
+        <div class="SelectedLanguage" data-component="selected"></div>
+        <form class="SearchInput">
+          <input
+            class="SearchInput__input"
+            type="text"
+            placeholder="프로그램 언어를 입력하세요."
+            value=""
+            data-component="search"
+          />
+        </form>
+        <div class="Suggestion" data-component="suggestion"></div>
+      </main>
+    </template>
+    <div id="root">
+      <div data-component="app"></div>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
